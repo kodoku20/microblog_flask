@@ -1,2 +1,2 @@
 ### Microblog App
-##### Technologies: Flask
+##### Technologies: Flask, Flask-WTF
