@@ -1,0 +1,109 @@
+2020-07-16 14:57:42,725 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 14:57:51,255 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 15:00:32,603 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 15:00:35,371 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 16:44:34,812 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 16:45:25,548 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 16:46:23,816 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 16:50:30,397 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 17:04:01,962 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-16 17:04:09,445 ERROR: Exception on /user/john [GET] [in /Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/denis/Desktop/FLASK/microblog/app/routes.py", line 87, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/denis/Desktop/FLASK/microblog/app/templates/user.html", line 17, in template
+    <p><a href="{{ url_for('unfollow', username=user.username }}">Unfollow</a></p>
+jinja2.exceptions.TemplateSyntaxError: unexpected '}', expected ')'
+2020-07-16 17:05:27,399 ERROR: Exception on /unfollow/denant1993 [GET] [in /Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/denis/Desktop/FLASK/microblog/app/routes.py", line 125, in unfollow
+    user = User.query.filter_by(username=usename).first()
+NameError: name 'usename' is not defined
+2020-07-16 17:06:16,064 ERROR: Exception on /unfollow/denant1993 [GET] [in /Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/denis/Desktop/FLASK/microblog/app/routes.py", line 125, in unfollow
+    user = User.query.filter_by(username=username).first()
+NameError: name 'usename' is not defined
+2020-07-16 17:06:38,578 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-25 19:19:08,800 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-25 19:52:58,543 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-25 21:28:30,290 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-26 10:36:04,437 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-26 11:22:32,303 INFO: Microblog startup [in /Users/denis/Desktop/FLASK/microblog/app/__init__.py:45]
+2020-07-26 11:22:35,501 ERROR: Exception on /user/cheyz [GET] [in /Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/denis/Desktop/FLASK/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/denis/Desktop/FLASK/microblog/app/routes.py", line 104, in user
+    page = requests.args.get('page', 1, type=int)
+NameError: name 'requests' is not defined
